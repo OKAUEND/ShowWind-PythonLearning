@@ -26,3 +26,13 @@ index = 0
 for drink_item in Drinks:
     print(str(index) + ', ' + drink_item.info())
     index += 1
+
+print('------------------------------------')
+
+Food_order = int(input('注文するフードを選んでください：'))
+Drink_order = int(input('注文するドリンクを選んでください：'))
+Order_Set = int(input('注文するセット数を選んでください：'))
+
+result = Cakes[Food_order].Total_price(Order_Set) + Drinks[Drink_order].Total_price(Order_Set)
+
+print('お会計は'+ str(result) + '円です')

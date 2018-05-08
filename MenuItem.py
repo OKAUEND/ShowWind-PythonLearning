@@ -4,3 +4,6 @@ class MenuItem(object):
         self.name = name
         self.price = price
 
+    def Total_price(self,Order_Count):
+        return self.price * Order_Count
+
