@@ -1,5 +1,12 @@
 from Food import Food
 
-Cake = Food('チョコケーキ',300,150)
+Cake = Food('ケーキ',300,150)
+ChocCake = Food('チョコケーキ',450,300)
+CheeseCake = Food('チーズケーキ',350,200)
+StrawberryCake = Food('イチゴケーキ',400,250)
 
-Cake.info()
+Cakes =[Cake,ChocCake,CheeseCake,StrawberryCake]
+index = 0
+
+for cake_item in Cakes:
+    print(str(index) + '. ' + cake_item.info())

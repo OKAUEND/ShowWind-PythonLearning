@@ -7,4 +7,4 @@ class Food(MenuItem):
         self.calorie = calorie
 
     def info(self):
-        print(self.name + ':' + str(self.price) + ':' + str(self.calorie)) 
+        return self.name + ':￥' + str(self.price) + ' ' + str(self.calorie) + 'kcal'
